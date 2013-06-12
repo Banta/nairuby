@@ -11,6 +11,7 @@ gem "rolify", ">= 3.2.0"
 gem "simple_form", ">= 2.0.4"
 gem 'hirb'
 gem 'gmail'
+gem 'clockwork'
 
 gem "figaro" # gem for environment variables
 
