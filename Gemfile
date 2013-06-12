@@ -12,6 +12,7 @@ gem "simple_form", ">= 2.0.4"
 gem 'hirb'
 gem 'gmail'
 gem 'clockwork'
+gem 'delayed_job_active_record'
 
 gem "figaro" # gem for environment variables
 
