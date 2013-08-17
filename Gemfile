@@ -19,6 +19,7 @@ group :development do
 	gem "better_errors", ">= 0.3.2"
 	gem "binding_of_caller", ">= 0.6.8"
 	gem "hub", ">= 1.10.2", :require => nil
+	gem "guard-rspec"
 end
 
 group :development, :test do
