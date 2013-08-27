@@ -7,11 +7,13 @@
 <p><%= @discussion.post %></p>
 <% if user_signed_in? %>
 	<p>
-		<% if @discussion.user.id == current_user.id %>
+		<% if can? :update, @discussion %>
 			<%= link_to "Edit", edit_discussion_path(@discussion), :class => 'btn btn-mini' %>
 		 	|
+		 	<% end %>
+		 	<% if can? :destroy, @discussion %>
 		 	<%= link_to("Delete", @discussion, :data => { 	:confirm => "Are you sure?" }, :method => :delete, :class => 'btn btn-mini') %>
-		 <% end %>
+		 	<% end %>
 	</p>
 <% end %>
 <strong>Started by <%= link_to @discussion.user.name, user_path(@discussion.user) %></strong>
