@@ -42,6 +42,7 @@ end
 
 group :production do
 	gem "thin", ">= 1.5.0"
+ 	gem 'rails_12factor'
 end
 
 group :assets do
