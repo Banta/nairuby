@@ -16,6 +16,8 @@
 	</p>
 <% end %>
 
+<% if user_signed_in? %>
 <br /><br /><%= link_to t('.new', :default => t("helpers.links.new")),
             new_discussion_path,
             :class => 'btn btn-primary' %>
+<% end %>

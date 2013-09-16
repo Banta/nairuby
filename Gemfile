@@ -23,6 +23,7 @@ group :development do
 	gem "binding_of_caller", ">= 0.6.8"
 	gem "hub", ">= 1.10.2", :require => nil
 	gem 'therubyracer'
+	gem "guard-rspec"
 end
 
 group :development, :test do
